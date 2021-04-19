@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ImageToPDF.exe" version="1.0.0.1" publicKeyToken="4e27e7f8b848f52a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ImageToPDF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ImageToPDF.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="2572288">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.8.6.0" publicKeyToken="0E99375E54769942" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VTDf+Xa8DIiQdrl8ppW9uX7wf2NEnTL4k+0yOY7Yv+Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImageToPDF.exe" size="13296">
+      <assemblyIdentity name="ImageToPDF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FLQdlVw/CpJvvWSuJVnctxo82pAftAt8qNc9jvGGR1A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="2621440">
+      <assemblyIdentity name="itextsharp" version="5.5.13.2" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eHzDzlCnRkcQ0EkX0/5p5R4wCsI7jUQkwD9OVb4QdZk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ImageToPDF.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=GALILEO\fernando.ignacio" issuerKeyHash="316492bd3f289800d1abbec3406c24d5a07f799d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HY/A0Y7m2AFvjfTTsNBgq7bS2cKr6SMAter0mJacd/Y=</DigestValue></Reference></SignedInfo><SignatureValue>Pa9m7G4/AtnkaCAdcpCciAPdVNoczoa56oJZgsBUPKB4xE5VjVlssBkr8gnd6bMvHvvfxIJ16lD8rtkQYs8oJIPhFrELP82hDwxJbPkj1vJKBG6DFvQA7IZ6LFjkjSVS6BMekP6kGV9eEU1G3FaJNy4pBzXvTih8n2+gqn4qR8k=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>txQFrdKAq3+sacoVDGduex9yURkI+uxMJvvujVzaxjVg5yQIG/Ig70vQNAsgE+HNqHGO95VMzZcnGgU6pqQAQBzGonnZfsnXvgE+V09yr4H6OUHjbNr2m1TsETaYhDCjEE8oO+v1hUV8ZFhVYEbQrCTy+U69SSUCfcOdDex4RUE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f6779c9698f4eab50023e9abc2d9d2b6ab60d0b0d3f48d6f01d8e68ed1c08f1d" Description="" Url=""><as:assemblyIdentity name="ImageToPDF.exe" version="1.0.0.1" publicKeyToken="4e27e7f8b848f52a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GALILEO\fernando.ignacio</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FoJ7zJ3vSC5by0Mc6k/UvE4FRSr3Yk6wmwtNcUcDwv4=</DigestValue></Reference></SignedInfo><SignatureValue>TVMDTJ8ghMAqjRl0aotcWHJ3bruUtSW0iSZOKfPAhKvLY5xv3fdwbza8ASVtnKhkENe1UB2Pthj2QRU6ZTxB9hQ98svNPnrQKPd4l/8YONQOJU0TLR3qW1UkJt9Lo/1yblfd4VBN4n9VmvWB6ohOzx5Me5WK4ftiMzklXztMMbs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>txQFrdKAq3+sacoVDGduex9yURkI+uxMJvvujVzaxjVg5yQIG/Ig70vQNAsgE+HNqHGO95VMzZcnGgU6pqQAQBzGonnZfsnXvgE+V09yr4H6OUHjbNr2m1TsETaYhDCjEE8oO+v1hUV8ZFhVYEbQrCTy+U69SSUCfcOdDex4RUE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQfspbVdXiEqZIT679VzfdRzANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARwBBAEwASQBMAEUATwBcAGYAZQByAG4AYQBuAGQAbwAuAGkAZwBuAGEAYwBpAG8wHhcNMjEwNDE5MDA1MzMxWhcNMjIwNDE5MDY1MzMxWjA7MTkwNwYDVQQDHjAARwBBAEwASQBMAEUATwBcAGYAZQByAG4AYQBuAGQAbwAuAGkAZwBuAGEAYwBpAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALcUBa3SgKt/rGnKFQxnbnsfclEZCPrsTCb77o1c2sY1YOckCBvyIO9L0DQLIBPhzahxjveVTM2XJxoFOqakAEAcxqJ52X7J174BPldPcq+B+jlB42za9ptU7BE2mIQwoxBPKDvr9YVFfGRYVWBG0Kwk8vlOvUklAn3DnQ3seEVBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAKSns26Y317URorzfi8aGFPbhMrGkJpBQrTygDybNRZitGgyN5CZaQ/Kyl5yTxYR1jyemzuYhetqcY00K9Q4EOp0ywC2DDIKeyN/aDQhnTT3koDjW+dttS213cplF2rMOcPxYONBZ4BOSQdr3N7lmbFdQgtxN9oIn1Irgcz8pm4c=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
